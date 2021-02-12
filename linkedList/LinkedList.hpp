@@ -146,11 +146,10 @@ bool LinkedList<T>::removeBack()
     {
         while(secondintoLast->getNext()->getNext()!= nullptr)
         {
-            secondintoLast->secondintoLast->getNext();
+            secondintoLast = secondintoLast->getNext();
         }
         lastNode = secondintoLast->getNext();
         delete(lastNode);
-        secondintoLast->setNext() = nullptr;
         m_size--;
         isRemoved = false;
     }
